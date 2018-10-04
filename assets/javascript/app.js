@@ -13,13 +13,34 @@
        
         var database = firebase.database();
     
-    
-        var clickCounter = 0;
+        var name = "";
+        var role = "";
+        var startDate = "";
+        var rate = "";
+
+
+
 
         $("#click-button").on("click", function() {
     
-          clickCounter++;  
-          database.ref().set({
-            clickCount: clickCounter
+          event.preventDefault();
+
+           // Get inputs
+            name = $("#employee-name-input").val().trim();
+            role = $("#role-input").val().trim();
+            startDate = $("#start-input").val().trim();
+            rate = $("#rate-input").val().trim();
+
+
+            // Change what is saved in firebase
+            database.ref().set({
+              name: name,
+              role: role,
+              startDate: startDate,
+              rate: rate
+            });
+
+
+
           });
  
