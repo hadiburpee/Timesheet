@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
       var config = {
         apiKey: "AIzaSyCzuJs-bPkkXMsE9dGtDkqT0LZT3v3WV0o",
@@ -21,3 +22,7 @@
           database.ref().set({
             clickCount: clickCounter
           });
+=======
+$("#add-employee-btn").on("click", function(event) {
+    event.preventDefault();
+>>>>>>> f3253e2b72b7661123801ac4d5bef53ef5cd13d3
