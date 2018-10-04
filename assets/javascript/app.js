@@ -22,3 +22,4 @@
           database.ref().set({
             clickCount: clickCounter
           });
+ 
