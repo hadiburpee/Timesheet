@@ -1,3 +1,4 @@
+
 $("#add-employee-btn").on("click", function(event) {
     event.preventDefault();
 
@@ -25,6 +26,7 @@ $("#add-employee-btn").on("click", function(event) {
     messagingSenderId: "716811773412"
   };
   firebase.initializeApp(config);
+
     
        
         var database = firebase.database();
@@ -37,7 +39,7 @@ $("#add-employee-btn").on("click", function(event) {
 
 
 
-        $("#click-button").on("click", function() {
+        $("#run-search").on("click", function() {
     
           event.preventDefault();
 
