@@ -15,15 +15,16 @@ $("#add-employee-btn").on("click", function(event) {
       rate: empRate
     };  
 
-      var config = {
-        apiKey: "AIzaSyCzuJs-bPkkXMsE9dGtDkqT0LZT3v3WV0o",
-        authDomain: "test1-47778.firebaseapp.com",
-        databaseURL: "https://test1-47778.firebaseio.com",
-        projectId: "test1-47778",
-        storageBucket: "test1-47778.appspot.com",
-        messagingSenderId: "519722482230"
-      };
-      firebase.initializeApp(config);
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD17_Bi4Go9Xgew2wnGqEkCtccBt7d7e30",
+    authDomain: "timesheetdata-805c0.firebaseapp.com",
+    databaseURL: "https://timesheetdata-805c0.firebaseio.com",
+    projectId: "timesheetdata-805c0",
+    storageBucket: "timesheetdata-805c0.appspot.com",
+    messagingSenderId: "716811773412"
+  };
+  firebase.initializeApp(config);
     
        
         var database = firebase.database();
