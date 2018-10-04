@@ -6,6 +6,7 @@
         storageBucket: "test1-47778.appspot.com",
         messagingSenderId: "519722482230"
       };
+      
       firebase.initializeApp(config);
     
        
