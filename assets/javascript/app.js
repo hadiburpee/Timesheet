@@ -1,21 +1,4 @@
-$("#add-employee-btn").on("click", function(event) {
-    event.preventDefault();
-
-    // Grabs user input
-    var empName = $("#employee-name-input").val().trim();
-    var empRole = $("#role-input").val().trim();
-    var empStart = $("#start-input").val().trim();
-    var empRate = $("#rate-input").val().trim();
-  
-    // Creates local "temporary" object for holding employee data
-    var newEmp = {
-      name: empName,
-      role: empRole,
-      start: empStart,
-      rate: empRate
-    };  
-
-      var config = {
+        var config = {
         apiKey: "AIzaSyCzuJs-bPkkXMsE9dGtDkqT0LZT3v3WV0o",
         authDomain: "test1-47778.firebaseapp.com",
         databaseURL: "https://test1-47778.firebaseio.com",
@@ -36,7 +19,7 @@ $("#add-employee-btn").on("click", function(event) {
 
 
 
-        $("#click-button").on("click", function() {
+        $("#run-search").on("click", function() {
     
           event.preventDefault();
 
